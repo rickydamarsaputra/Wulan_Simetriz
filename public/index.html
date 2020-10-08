@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Beranda - Simetriz Jasa Pembuatan website lampung</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+
+	<body>
+		<div id="particles-js"></div>
+
+		<!-- header -->
+		<header x-data="{isOpen:false}" class="fixed left-0 right-0 z-50 md:bg-white">
+			<div class="md:w-4/5 md:mx-auto mx-5 mt-5 md:mt-0 flex flex-col md:flex-row md:justify-between md:items-center">
+				<div class="flex justify-between items-center bg-white md:bg-transparent shadow-lg md:shadow-none px-4 md:px-0">
+					<img src="./img/simetriz-logo.png" alt="simetriz-logo" class="w-20" />
+					<div class="simetriz-toggle text-2xl md:hidden cursor-pointer" @click="isOpen = !isOpen">
+						<i class="fas fa-bars" x-show="isOpen == false"></i>
+						<i class="fas fa-times" x-show="isOpen == true"></i>
+					</div>
+				</div>
+				<ul class="simetriz-menu hidden md:flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 p-5 md:p-0 mt-4 md:mt-0 shadow-md md:shadow-none rounded-md md:rounded-none bg-white md:bg-transparent">
+					<li><a href="#" class="md:text-sm lg:text-base simetriz-nav-link">beranda</a></li>
+					<li><a href="#" class="md:text-sm lg:text-base simetriz-nav-link">layanan</a></li>
+					<li><a href="#" class="md:text-sm lg:text-base simetriz-nav-link">tentang</a></li>
+					<li><a href="#" class="md:text-sm lg:text-base simetriz-nav-link">portofolio</a></li>
+					<li><a href="#" class="md:text-sm lg:text-base simetriz-nav-link">kontak</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- hero -->
+		<section>
+			<div class="w-4/5 h-screen mx-auto flex items-center pt-20 md:pt-0">
+				<div class="grid lg:grid-cols-2 items-center">
+					<div>
+						<div class="text-2xl md:text-4xl capitalize font-bold leading-tight header-tagline">ingin menjangkau target pasar yang <span class="text-indigo-500">lebih luas?</span></div>
+						<div class="mt-4 header-tagline">Mari promosikan bisnis anda bersama kami melalui media digital agar dapat menjangkau pasar yang lebih luas</div>
+						<button class="simetriz-button mt-4 header-tagline">get started</button>
+					</div>
+					<div class="order-first lg:order-none header-img">
+						<img src="./img/meeting.png" alt="meeting" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- services -->
+		<section class="simetriz-services">
+			<div class="w-4/5 mx-auto py-10">
+				<div class="text-center">
+					<div class="simetriz-badge">layanan kami</div>
+					<div class="capitalize font-semibold text-xl lg:text-3xl my-5">apa saja layanan kami</div>
+					<div class="flex justify-center"><img src="./img/border-divider.svg" alt="border-divider" /></div>
+				</div>
+				<div class="grid lg:grid-cols-2 gap-5 mt-10 services-wrapper">
+					<div class="flex flex-col md:flex-row items-center space-x-5 shadow-lg bg-white transition duration-500 transform hover:scale-105 cursor-pointer rounded-sm p-10 services-tagline">
+						<div><img src="./img/web-design.svg" alt="web-design" class="w-32" /></div>
+						<div class="text-center md:text-left mt-4 md:mt-0">
+							<div class="text-xl font-semibold">Web Design</div>
+							<div class="text-sm text-gray-700">Menerima jasa pembuatan website company profile, website sekolah, website desa, personal website, dll</div>
+						</div>
+					</div>
+					<div class="flex flex-col md:flex-row items-center space-x-5 shadow-lg bg-white transition duration-500 transform hover:scale-105 cursor-pointer rounded-sm p-10 services-tagline">
+						<div><img src="./img/web-dev.svg" alt="web-dev" class="w-32" /></div>
+						<div class="text-center md:text-left mt-4 md:mt-0">
+							<div class="text-xl font-semibold">Web Development</div>
+							<div class="text-sm text-gray-700">Mari Bangun Website Anda bersifat dinamis agar dapat berinteraksi Dengan Pengunjung Website</div>
+						</div>
+					</div>
+					<div class="flex flex-col md:flex-row items-center space-x-5 shadow-lg bg-white transition duration-500 transform hover:scale-105 cursor-pointer rounded-sm p-10 services-tagline">
+						<div><img src="./img/graphic.svg" alt="graphic" class="w-32" /></div>
+						<div class="text-center md:text-left mt-4 md:mt-0">
+							<div class="text-xl font-semibold">Design Grafis</div>
+							<div class="text-sm text-gray-700">Menerima jasa pembuatan Logo company, Personal logo, Desain undangan, dan lain-lain</div>
+						</div>
+					</div>
+					<div class="flex flex-col md:flex-row items-center space-x-5 shadow-lg bg-white transition duration-500 transform hover:scale-105 cursor-pointer rounded-sm p-10 services-tagline">
+						<div><img src="./img/dekstop.svg" alt="dekstop" class="w-32" /></div>
+						<div class="text-center md:text-left mt-4 md:mt-0">
+							<div class="text-xl font-semibold">Desktop Development</div>
+							<div class="text-sm text-gray-700">Menerima Jasa Pembuatan aplikasi desktop seperti aplikasi penjualan, dan lain-lain</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="simetriz-about-us">
+			<!-- about -->
+			<section>
+				<div class="w-4/5 mx-auto py-10">
+					<div class="grid lg:grid-cols-2 gap-5">
+						<div><img src="./img/about-us.svg" alt="about-use" /></div>
+						<div>
+							<div class="flex items-center">
+								<div class="capitalize font-medium">tentang kami</div>
+								<img src="./img/border-divider.svg" alt="border-divider" class="mt-2" />
+							</div>
+							<div class="capitalize font-semibold text-2xl my-5">mari jangkau bisnis anda lebih luas</div>
+							<div class="text-sm text-gray-700">Simetriz adalah penyedia Jasa Pembuatan Website dan aplikasi desktop yang berfokus pada pengembangan bisnis melalui website dan kebutuhan aplikasi lainnya.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- why -->
+			<section>
+				<div class="w-4/5 mx-auto py-10">
+					<div class="text-center">
+						<div class="simetriz-badge">why</div>
+						<div class="capitalize font-semibold text-xl lg:text-3xl my-5">mengapa memilih <span class="text-indigo-600">simetriz ?</span></div>
+						<div class="flex justify-center"><img src="./img/border-divider.svg" alt="border-divider" /></div>
+					</div>
+					<div class="grid lg:grid-cols-2 gap-5 mt-5">
+						<div>
+							<ol class="list-decimal text-lg lg:text-xl flex flex-col space-y-5">
+								<li>
+									<div class="capitalize font-semibold cursor-pointer">Mudah Digunakan</div>
+									<div class="text-base text-gray-700">memastikan bahwa website atau aplikasi yang anda bangun bersama kami nantinya user friendly dan mudah dikelola oleh admin.</div>
+								</li>
+								<li>
+									<div class="capitalize font-semibold cursor-pointer">Design elegant dan menarik</div>
+									<div class="text-base text-gray-700">Team kami akan membangun website atau aplikasi dengan desain yang menarik serta sesuai dengan keinginan anda.</div>
+								</li>
+								<li>
+									<div class="capitalize font-semibold cursor-pointer">Responsive</div>
+									<div class="text-base text-gray-700">Memastikan website yang anda bangun bersama kami terlihat nyaman di segala device.</div>
+								</li>
+							</ol>
+						</div>
+						<div class="order-first lg:order-none"><img src="./img/mockup-high.png" alt="mockup-high" /></div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+		<script src="../node_modules/alpinejs/dist/alpine.js"></script>
+		<script src="../node_modules/particles.js/particles.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

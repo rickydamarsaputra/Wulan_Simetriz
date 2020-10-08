@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+* {
+	font-family: "Poppins", sans-serif;
+	@apply text-gray-800;
+}
+
+canvas.particles-js-canvas-el {
+	@apply absolute top-0 bottom-0 left-0 right-0;
+	z-index: -1;
+}
+
+body {
+	height: 10000px;
+}
+
+.simetriz-nav-link {
+	@apply capitalize font-medium transition duration-300;
+}
+
+.simetriz-nav-link:hover {
+	@apply text-blue-400;
+}
+
+.simetriz-button {
+	@apply capitalize bg-indigo-500 text-white py-2 px-5 rounded-l-full rounded-br-full transition duration-500;
+}
+
+.simetriz-button:hover {
+	@apply bg-indigo-600;
+}
+
+.simetriz-badge {
+	@apply inline uppercase tracking-wider text-xs py-1 px-4 rounded-full text-indigo-700 bg-indigo-100;
+}
+
+.simetriz-services {
+	background: url("../img/bg-wave.png") no-repeat;
+}
+
+.simetriz-about-us {
+	background: url("../img/r-elipse-bg.png") no-repeat right;
+	background-size: 500px;
+}

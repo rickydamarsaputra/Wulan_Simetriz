@@ -1,0 +1,19 @@
+{
+	"name": "web-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build:css": "postcss --watch  tailwindcss.css -o public/css/main.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@fullhuman/postcss-purgecss": "^3.0.0",
+		"alpinejs": "^2.4.1",
+		"autoprefixer": "^10.0.1",
+		"particles.js": "^2.0.0",
+		"tailwindcss": "^1.4.6"
+	}
+}
